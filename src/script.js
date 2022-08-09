@@ -1,7 +1,7 @@
 let productos = [];
 let preciosUnitarios= [];
 let cantidadDeProductos = [];
-let total = 0;
+
 
 function agregarProductoAlCarrito(){
 
@@ -31,13 +31,14 @@ function agregarProductoAlCarrito(){
 }
 
 function calcularCompra(){
+    let total = 0;
     for(let i=0; i<productos.length;i++){
-        total = total + parseInt((preciosUnitarios[i] * cantidadDeProductos[i]));
+        total = total + (preciosUnitarios[i] * cantidadDeProductos[i]);
     }
 
     let h2 = document.createElement("h2");
     h2.innerHTML = "Total de su Compra " + total;
-    miLista.appendChild(h2);
+    divTotal.appendChild(h2);
 }
 
 function eliminarUltimo (){
@@ -46,6 +47,8 @@ function eliminarUltimo (){
     cantidadDeProductos.pop();
 
     miLista.removeChild(miLista.lastChild)
+    divTotal.removeChild(divTotal.lastChild)
+
 }
 
 function eliminarTodo (){
@@ -54,12 +57,15 @@ function eliminarTodo (){
     cantidadDeProductos = [];
 
     miLista.innerHTML = "";
+    divTotal.removeChild(divTotal.lastChild)
     
 }
 
 
 
 let miLista = document.querySelector(".carrito");
+
+let divTotal = document.querySelector(".total");
 
 let btnAgregar = document.getElementById("agregarProducto");
 btnAgregar.addEventListener("click",agregarProductoAlCarrito);
