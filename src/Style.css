@@ -1,0 +1,19 @@
+ul {
+    margin:0;
+    padding:0;
+    /* text-align: center; */
+    list-style:none;                
+}
+ul  li {
+    padding: 2px 5px;               
+}
+
+ul li:before {
+    content:url(#);;
+}
+
+.colorVerde {
+    text-align: center;
+    color: green;
+    font-size: 24px;
+}
