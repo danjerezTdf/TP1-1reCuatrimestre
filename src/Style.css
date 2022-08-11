@@ -9,11 +9,14 @@ ul  li {
 }
 
 ul li:before {
-    content:url(#);;
+    content:url(#);
 }
 
 .colorVerde {
     text-align: center;
     color: green;
     font-size: 24px;
+}
+.navbar {
+    background-color: #e3f2fd;
 }
