@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>TP1reCuatrimestre - Daniel Jerez</title>
 </head>
 <body>
+    <header class="main-header">
+        <div class="container container-flex">
+            <div class="main-header-container">
+                <h1 class="main-header-title">SOUTHTECH</h1>
+                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="" class="menu-link">Inicio</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Productos</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Quienes Somos</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Soporte</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Contaco</a></li>
+                    </ul> 
+                </nav>
+            </div>
+            <div class="mian-header-container">
+                <span class="main-header-contact">Contacto</span>
+                <p class="main-header-contact">+54 9 11 67047349</p>
+            </div>
+            <div class="mian-header-container">
+                <i class="fa-regular fa-user"></i>
+                <a href="">Mi Carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                <input type="search"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
     
-<h1>Ventas</h1>
+<!-- <h1>Ventas</h1>
 <div>
-
     <input type="text" placeholder="Producto" id="productoNuevo">
     <input type="number" placeholder="Precio Unitario" id="precioUnitario">
     <input type="number" placeholder="Cantidad a llevar" id="cantidadUnitaria">
@@ -22,7 +48,6 @@
     <button id="calcularTotal">Calcular Compra</button>
     <button id="vaciarCarrito">Vaciar Carrito</button>
 </div>
-
 <div>
     <h2>Carrito</h2>
 
@@ -32,9 +57,7 @@
 </div>
 <div class="total">
 </div>
-<br>
-
-
+<br> -->
     <script src="./src/script.js"></script>
 </body>
 </html>
