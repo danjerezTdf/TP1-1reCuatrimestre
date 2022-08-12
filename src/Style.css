@@ -16,15 +16,21 @@ img {
 .main-nav {
     display: none;
 }
-.main-header-content {
+.main-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.icon-menu {
+    font-size: 1.5em;
+    border: 1px solid black;
+    display: block;
+    padding: 10px;
+}
 ul {
     margin:0;
-    padding:0; 
+    padding:0;  
     /* text-align: center; */
     list-style:none;                
 }
@@ -40,4 +46,4 @@ ul li:before {
     text-align: center;
     color: green;
     font-size: 24px;
-}
+} 
