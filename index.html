@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
     <title>TP1reCuatrimestre - Daniel Jerez</title>
 </head>
 <body>
@@ -26,15 +27,28 @@
             </div>
             <div class="main-header-container">
                 <span class="main-header-contact">Contacto</span>
-                <p class="main-header-contact">+54 9 11 67047349</p>
+                <p class="main-header-contact"> <i class="fa-solid fa-phone"></i> +54 9 11 67047349</p>
             </div>
             <div class="main-header-container">
                 <i class="fa-regular fa-user"></i>
-                <a href="">Mi Carrito<i class="fa-solid fa-cart-shopping"></i></a>
-                <input type="search"><i class="fa-solid fa-magnifying-glass"></i>
+                <a href="" class="main-header-btn">Mi Carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                <input type="search" class="main-header-imput" placeholder="Buscar Producto"><i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     </header>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2021/03/setup-gaming-2267149.jpg?h=8abcec71&itok=ZwtXAhl7" alt="" class="slider-img"></div>
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2021/04/alfombrilla-blade-hawks-2288979.jpg?itok=L_F6mOY1" alt="" class="slider-img"></div>
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2020/04/cascos-gaming-beexcellent-1924445.jpg?itok=QlSIuqKZ" alt="" class="slider-img"></div>
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2021/04/teclado-gaming-hxsj-v100-2288981.jpg?itok=X6QYqgum" alt="" class="slider-img"></div>
+        </div> 
+        <div class="slider-btn slider-btn-right" id="btn-rigth">&#62;</div>
+        <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
+    
+    </div>
+
+
     
 <!-- <h1>Ventas</h1>
 <div>
@@ -56,8 +70,8 @@
     </ul>
 </div>
 <div class="total">
-</div>
-<br> -->
+</div> -->
+<br>
     <script src="./src/script.js"></script>
 </body>
 </html>

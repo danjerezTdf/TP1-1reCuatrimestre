@@ -1,7 +1,41 @@
+
 let productos = [];
 let preciosUnitarios= [];
 let cantidadDeProductos = [];
 let total = 0;
+// slider
+const slider = document.querySelector("#slider");
+let slidersection = document.querySelectorAll(".slider-section");
+let slidersectionLast = slidersection[slidersection.length-1];
+
+slider.insertAdjacentElement('afterbegin', slidersectionLast)
+
+function next() {
+    let sliderSectionFirst = document.querySelectorAll(".slider-section")[0];
+    slider.style.marginleft = "-200%";
+    slider.style.transition = "all 0.7s";
+    setTimeout(function () {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+        slider.style.marginleft = "-100%";
+    }, 500)
+}
+
+function prev() {
+    console.log("estoy ahora aca")
+    let sliderSection = document.querySelectorAll(".slider-section");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    slider.style.marginleft = "0%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function () {
+        slider.style.transition ="none";
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginleft = "-100%";
+    }, 500)
+
+}
+
+// end slider
 
 function canlcular (){
     let total = 0;
@@ -79,6 +113,17 @@ function calcularTotal (){
     divTotal.appendChild(miTotal)
 }
 
+// slider
+const btnRight = document.querySelector(".slider-btn-right");
+btnRight.addEventListener("click", next);
+
+const btnLeft = document.querySelector(".slider-btn-left");
+btnLeft.addEventListener("click", prev);
+
+setInterval ( function () {
+    next();
+}, 5000);
+// end slider
 
 let miLista = document.querySelector(".carrito");
 
