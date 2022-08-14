@@ -51,20 +51,18 @@ img {
     text-decoration: none;
 }
 /* fin css header */
+
 /* css slider */
 .container-slider {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    overflow: hidden;
-/*     box-shadow: 0 0 0 1px #454546,
-                0 15px 50px; */
+    margin: 50px 0 auto;
     position: relative;
+    overflow: hidden;
+
 }
 .slider {
     display:flex;
     width: 400%;
-    height: 400px;
+    height: 300px;
     margin-left: -100%;
 }
 .slider-section {
@@ -87,7 +85,7 @@ img {
     font-weight: bold;
     font-family: monospace;
     text-align: center;
-    /* border-radius: 50%; */
+    border-radius: 50%; 
     cursor: pointer;
 }
 .slider-btn-left {
@@ -96,8 +94,6 @@ img {
 .slider-btn-right {
     right: 10px;
 }
-
-
 /* fin css slider */
 
 ul {
