@@ -73,69 +73,65 @@
     <main class="main">
         <h2 class="main-title">Productos</h2>
         <div class="container-products">
-        <div class="product">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_801126-MLA40433953617_012020-O.webp" alt="" class="product-img">
-            <div class="product-descript">
-                <h3 class="product-title">Auriculares gamer Logitech G Series G332 </h3>
-                <spam class="product-price">$ 13.556</spam>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_801126-MLA40433953617_012020-O.webp" alt="" class="product-img">
+                    <div class="product-descript">
+                        <h3 class="product-title">Auriculares gamer Logitech G Series G332 </h3>
+                        <spam class="product-price">$ 13.556</spam>
+                    </div>
+                <button class="fa-solid fa-cart-plus product-icon" id="product-A" value="0"></button>
             </div>
-            <i class="fa-solid fa-cart-plus"></i>
-          </div>
-          <div class="product">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_751353-MLA45434957044_042021-O.webp" alt="" class="product-img">
-            <div class="product-descript">
-                <h3 class="product-title">Cpu Gamer I7 + 16gb + 1tb + Gt 1030 2gb</h3>
-                <spam class="product-price">$ 177.432</spam>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_751353-MLA45434957044_042021-O.webp" alt="" class="product-img">
+                <div class="product-descript">
+                    <h3 class="product-title">Cpu Gamer I7 + 16gb + 1tb + Gt 1030 2gb</h3>
+                    <spam class="product-price">$ 177.432</spam>
+                </div>
+                <button class="fa-solid fa-cart-plus product-icon" id="product-B" value="1"></buetton>
             </div>
-            <i class="fa-solid fa-cart-plus"></i>
-          </div>
-          <div class="product">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_965599-MLA50511943431_062022-O.webp" alt="" class="product-img">
-            <div class="product-descript">
-                <h3 class="product-title">Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6"</h3>
-                <spam class="product-price">$ 143.999</spam>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_965599-MLA50511943431_062022-O.webp" alt="" class="product-img">
+                <div class="product-descript">
+                    <h3 class="product-title">Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6"</h3>
+                    <spam class="product-price">$ 143.999</spam>
+                </div>
+                <button class="fa-solid fa-cart-plus product-icon" id="product-C" value="2"></buetton>
             </div>
-            <i class="fa-solid fa-cart-plus"></i>
-          </div>
-          <div class="product">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_623154-MLA43248306842_082020-O.webp" alt="" class="product-img">
-            <div class="product-descript">
-                <h3 class="product-title">Access point, Router, Sistema Wi-Fi mesh TP-Link Deco E4</h3>
-                <spam class="product-price">$ 26.699</spam>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_623154-MLA43248306842_082020-O.webp" alt="" class="product-img">
+                <div class="product-descript">
+                    <h3 class="product-title">Access point, Router, Sistema Wi-Fi mesh TP-Link Deco E4</h3>
+                    <spam class="product-price">$ 26.699</spam>
+                </div>
+            <button class="fa-solid fa-cart-plus product-icon" value="3"></button>
             </div>
-            <i class="fa-solid fa-cart-plus"></i>
-          </div>
-
-
-            </div>
-
         </div>
+
+        <br>
+
+        <div class="product" >
+            <input type="text" placeholder="Producto"  id="productoNuevo">
+            <input type="number" placeholder="Precio Unitario" name="points" min="1" max="9999999" step="1" id="precioUnitario">
+            <input type="number" placeholder="Cantidad a llevar" name="points" min="1" max="9999" step="1" id="cantidadUnitaria">
+            <br>
+            <br>
+            <button id="agregarProducto">Agregar Producto al Carrito</button>
+            <button id="eliminarUltimo">Eliminar Ultimo</button>
+            <button id="calcularTotal">Calcular Compra</button>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+        </div>
+        <br>
+        <div class="product">
+            <h2>Carrito</h2>
+            <ul class="carrito">
+
+            </ul>
+        </div>
+        <br>
+        <div class="total product">
+        </div>
+        <br>
     </main>
-
-
-    
-
-<div class="main">
-    <input type="text" placeholder="Producto" id="productoNuevo">
-    <input type="number" placeholder="Precio Unitario" pattern="^[1-9]\d*$" id="precioUnitario">
-    <input type="number" placeholder="Cantidad a llevar" pattern="^[1-9]\d*$" id="cantidadUnitaria">
-    <br>
-    <br>
-    <button id="agregarProducto">Agregar Producto al Carrito</button>
-    <button id="eliminarUltimo">Eliminar Ultimo</button>
-    <button id="calcularTotal">Calcular Compra</button>
-    <button id="vaciarCarrito">Vaciar Carrito</button>
-</div>
-<div class="main">
-    <h2>Carrito</h2>
-
-    <ul class="carrito">
-
-    </ul>
-</div>
-<div class="total main">
-</div>
-<br>
     <script src="./src/script.js"></script>
 </body>
 </html>

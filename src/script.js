@@ -2,7 +2,11 @@
 let productos = [];
 let preciosUnitarios= [];
 let cantidadDeProductos = [];
+let productosPre = ["Auriculares gamer Logitech G Series G332","Cpu Gamer I7 + 16gb + 1tb + Gt 1030 2gb","Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6","Access point, Router, Sistema Wi-Fi mesh TP-Link Deco E4"];
+let preciosUnitariosPre = ["13556","177432","14399","26699"];
+let cantidadDeProductosPre = 1;
 let total = 0;
+
 // slider
 const slider = document.querySelector("#slider");
 let slidersection = document.querySelectorAll(".slider-section");
@@ -41,6 +45,7 @@ function canlcular (){
     let total = 0;
     for(let i=0; i<productos.length;i++){
         total = total + (preciosUnitarios[i] * cantidadDeProductos[i]);
+        
     }
     return total;
 }
@@ -57,15 +62,28 @@ function agregarProductoAlCarrito(){
     let miItem = document.createElement("li");
     miItem.innerHTML = "Producto: " + producto + "  |  Cantidad: " + cantidadDeProducto + "  | Precio Unitario: " + precioUnitario;
 
-
-    //miItem.classList.add("colorVerde");
-
     miLista.appendChild(miItem);
+
     calcularCompra();
 
     document.getElementById("productoNuevo").value = "";
     document.getElementById("precioUnitario").value = "";
     document.getElementById("cantidadUnitaria").value = "";
+
+}
+
+function agregarProductoPrev(){
+    i=this.value;
+    productos.push(productosPre[i]);
+    preciosUnitarios.push(preciosUnitariosPre[i]);
+    cantidadDeProductos.push(cantidadDeProductosPre);
+    
+    let miItem = document.createElement("li");
+    miItem.innerHTML = "Producto: " + productosPre[i] + "  |  Cantidad: " + cantidadDeProductosPre + "  | Precio Unitario: " + preciosUnitariosPre[i];
+
+    miLista.appendChild(miItem);
+
+    calcularCompra();
 
 }
 
@@ -131,6 +149,11 @@ let divTotal = document.querySelector(".total");
 
 let btnAgregar = document.getElementById("agregarProducto");
 btnAgregar.addEventListener("click",agregarProductoAlCarrito);
+
+let btnIconAddProd = document.querySelectorAll(".product-icon");
+btnIconAddProd.forEach(boton => {
+    boton.addEventListener("click", agregarProductoPrev);
+});
 
 let btnCalcular = document.getElementById("calcularTotal");
 btnCalcular.addEventListener("click", calcularTotal);
