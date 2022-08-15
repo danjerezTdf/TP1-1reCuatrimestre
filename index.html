@@ -21,7 +21,7 @@
                             <li class="menu-item"><a href="" class="menu-link">Productos</a></li>
                             <li class="menu-item"><a href="" class="menu-link">Quienes Somos</a></li>
                             <li class="menu-item"><a href="" class="menu-link">Soporte</a></li>
-                            <li class="menu-item"><a href="" class="menu-link">Contaco</a></li>
+                            <li class="menu-item"><a href="" class="menu-link">Contacto</a></li>
                         </ul> 
                     </nav>
             </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="main-header-container">
                 <i class="fa-regular fa-user"></i>
-                <a href="" class="main-header-btn">Mi Carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="" class="main-header-btn">Mi Carrito <i class="fa-solid fa-cart-shopping"></i></a>
                 <input type="search" class="main-header-imput" placeholder="Buscar Producto"><i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
@@ -106,19 +106,22 @@
             <button class="fa-solid fa-cart-plus product-icon" value="3"></button>
             </div>
         </div>
-
         <br>
 
-        <div class="product" >
-            <input type="text" placeholder="Producto"  id="productoNuevo">
-            <input type="number" placeholder="Precio Unitario" name="points" min="1" max="9999999" step="1" id="precioUnitario">
-            <input type="number" placeholder="Cantidad a llevar" name="points" min="1" max="9999" step="1" id="cantidadUnitaria">
-            <br>
-            <br>
-            <button id="agregarProducto">Agregar Producto al Carrito</button>
-            <button id="eliminarUltimo">Eliminar Ultimo</button>
-            <button id="calcularTotal">Calcular Compra</button>
-            <button id="vaciarCarrito">Vaciar Carrito</button>
+        <div class="carrito-container">
+            <div class="imput-carrito">
+                <input type="text" placeholder="Producto"  id="productoNuevo">
+                <input type="number" placeholder="Precio Unitario" name="points" min="1" max="9999999" step="1" id="precioUnitario">
+                <input type="number" placeholder="Cantidad a llevar" name="points" min="1" max="9999" step="1" id="cantidadUnitaria">
+            </div>
+
+            <div class="btns-carrito">           
+                <button class="btn-carrito" id="agregarProducto">Agregar Producto al Carrito</button>
+                <button class="btn-carrito"id="eliminarUltimo">Eliminar Ultimo</button>
+                <button class="btn-carrito"id="calcularTotal">COMPRAR</button>
+                <button class="btn-carrito"id="vaciarCarrito">Vaciar Carrito</button>
+            </div>
+
         </div>
         <br>
         <div class="product">
@@ -132,6 +135,14 @@
         </div>
         <br>
     </main>
+    <footer class="main-footer">
+        <div class="main-footer-copy">
+            <P>Todos Los Derechos Reservados © 2022 Daniel Jerez</P>
+        </div>
+
+    </footer>
+
+
     <script src="./src/script.js"></script>
 </body>
 </html>

@@ -21,9 +21,57 @@ img {
     font-size: 2.5em;
     margin: 10px 0;
 }
+/*stilos de menu */
+
 .main-nav {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 999999;
 }
+.menu{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    background: #464646;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.menu-item {
+    text-align: center;
+    margin: auto;
+}
+.menu-link {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.menu-link:hover {
+    background: white;
+    color: #212121;
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid #454546; 
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+/* 
+.main-nav {
+    display: none; 
+
+} */
 .main-header .container {
     padding: 10px 30px;
 }
@@ -57,6 +105,7 @@ img {
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
+
 }
 /* fin header */
 
@@ -159,7 +208,7 @@ img {
     padding: 10px;
     width: 80px;
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 10px;
     transform: rotate(-90deg);
     color: white;
@@ -181,7 +230,9 @@ img {
 .product-icon {
     display: block;
     margin-top: 10px;
-    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    /* cursor: pointer; */
 }
 .product-img {
     width: 100%;
@@ -192,15 +243,72 @@ img {
 
 /* agregar prod */
 
+.carrito-container {
+    border : 1px solid #464646;
+    padding: 20px;
+    text-align: center;
+    place-content: center;
+}
+.imput-carrito{
+    display: block;
+    padding: 10px;
+}
 
+.btn-carrito{
+    background-color: #ff4e00;
+    border: none;
+    padding: 10px;
+    margin: 2px;
+    color: white; 
+    font-weight: bold;
+}
+/* fin agregar prod */
 
+.main-footer{
+    display: block;
+    padding: 20px;
+    background:#464646;
+    /* height: 20px; */
+
+}
+.main-footer-copy {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* fin footer*/
 ul {
     margin:0; 
     padding: 10px;  
     list-style:none;                
 }
 ul  li {
-    padding: 2px 5px;               
+    padding: 2px 5px;  
+    font-weight: bold;             
 }
 
 
+/* stilos para tablet */
+
+@media screen and (min-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+/* stilos para web */
+
+@media screen and (min-width:1024px){
+
+
+    .container-products {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 10px;
+}
+    .slider{
+        height: 400px;
+    }
+
+}

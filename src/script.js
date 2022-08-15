@@ -60,7 +60,7 @@ function agregarProductoAlCarrito(){
     cantidadDeProductos.push(cantidadDeProducto);
 
     let miItem = document.createElement("li");
-    miItem.innerHTML = "Producto: " + producto + "  |  Cantidad: " + cantidadDeProducto + "  | Precio Unitario: " + precioUnitario;
+    miItem.innerHTML = "Producto: " + producto + "  |  Cantidad: " + cantidadDeProducto + "  | Precio Unitario: $" + precioUnitario;
 
     miLista.appendChild(miItem);
 
@@ -79,7 +79,7 @@ function agregarProductoPrev(){
     cantidadDeProductos.push(cantidadDeProductosPre);
     
     let miItem = document.createElement("li");
-    miItem.innerHTML = "Producto: " + productosPre[i] + "  |  Cantidad: " + cantidadDeProductosPre + "  | Precio Unitario: " + preciosUnitariosPre[i];
+    miItem.innerHTML = "Producto: " + productosPre[i] + "  |  Cantidad: " + cantidadDeProductosPre + "  | Precio Unitario: $" + preciosUnitariosPre[i];
 
     miLista.appendChild(miItem);
 
@@ -96,7 +96,7 @@ function calcularCompra(){
     } */
 
     let miSubTotal = document.createElement("h2");
-    miSubTotal.innerHTML = "Subtotal de su Compra " + subtotal;
+    miSubTotal.innerHTML = "Subtotal de su Compra $" + subtotal;
     divTotal.appendChild(miSubTotal)
  
 }
@@ -127,9 +127,16 @@ function calcularTotal (){
     let total = canlcular();
     
     let miTotal = document.createElement("h2");
-    miTotal.innerHTML = "Total de su Compra " + total;
+    miTotal.innerHTML = "Total de su Compra $" + total;
     divTotal.appendChild(miTotal)
 }
+// menu ///
+
+let btnMenu = document.getElementById('btn-menu');
+let mainNav = document.getElementById('main-nav');
+btnMenu.addEventListener('click', function(){
+  mainNav.classList.toggle('mostrar');
+});
 
 // slider
 const btnRight = document.querySelector(".slider-btn-right");
