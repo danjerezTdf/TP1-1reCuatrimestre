@@ -6,6 +6,7 @@ let productosPre = ["Auriculares gamer Logitech G Series G332","Cpu Gamer I7 + 1
 let preciosUnitariosPre = ["13556","177432","14399","26699"];
 let cantidadDeProductosPre = 1;
 let total = 0;
+let cantidadDeProducto = 0;
 
 // slider
 const slider = document.querySelector("#slider");
@@ -51,26 +52,30 @@ function canlcular (){
 }
 
 function agregarProductoAlCarrito(){
+    if (document.getElementById("productoNuevo").value === ""){
+        alert("Cargue un Producto")
+    }else if (document.getElementById("precioUnitario").value === "" || document.getElementById("precioUnitario").value < 0){
+        alert ("Precio Invalido")}else {
 
-    let producto = document.getElementById("productoNuevo").value;
-    productos.push(producto);
-    let precioUnitario = document.getElementById("precioUnitario").value;
-    preciosUnitarios.push(precioUnitario);
-    let cantidadDeProducto = document.getElementById("cantidadUnitaria").value;
-    cantidadDeProductos.push(cantidadDeProducto);
-
-    let miItem = document.createElement("li");
-    miItem.innerHTML = "Producto: " + producto + "  |  Cantidad: " + cantidadDeProducto + "  | Precio Unitario: $" + precioUnitario;
-
-    miLista.appendChild(miItem);
-
-    calcularCompra();
-
-    document.getElementById("productoNuevo").value = "";
-    document.getElementById("precioUnitario").value = "";
-    document.getElementById("cantidadUnitaria").value = "";
-
-}
+            let producto = document.getElementById("productoNuevo").value;
+            productos.push(producto);
+            let precioUnitario = document.getElementById("precioUnitario").value;
+            preciosUnitarios.push(precioUnitario);
+            if(document.getElementById("cantidadUnitaria").value === ""){
+                cantidadDeProducto = 1;
+            }else{
+                cantidadDeProducto = document.getElementById("cantidadUnitaria").value;
+            }
+            cantidadDeProductos.push(cantidadDeProducto);
+            let miItem = document.createElement("li");
+            miItem.innerHTML = "Producto: " + producto + "  |  Cantidad: " + cantidadDeProducto + "  | Precio Unitario: $" + precioUnitario;
+            miLista.appendChild(miItem);
+            calcularCompra();
+        }
+        document.getElementById("productoNuevo").value = "";
+        document.getElementById("precioUnitario").value = "";
+        document.getElementById("cantidadUnitaria").value = "";
+    }
 
 function agregarProductoPrev(){
     i=this.value;
