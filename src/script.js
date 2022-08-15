@@ -61,7 +61,7 @@ function agregarProductoAlCarrito(){
             productos.push(producto);
             let precioUnitario = document.getElementById("precioUnitario").value;
             preciosUnitarios.push(precioUnitario);
-            if(document.getElementById("cantidadUnitaria").value === ""){
+            if(document.getElementById("cantidadUnitaria").value === "" || document.getElementById("cantidadUnitaria").value <0){
                 cantidadDeProducto = 1;
             }else{
                 cantidadDeProducto = document.getElementById("cantidadUnitaria").value;
