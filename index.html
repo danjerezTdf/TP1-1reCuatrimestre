@@ -1,38 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
     <title>TP1reCuatrimestre - Daniel Jerez</title>
 </head>
 <body>
-    
-<h1>Ventas</h1>
-<div>
+    <header class="main-header">
+        <div class="container container-flex">
+            <div class="main-header-container">
+                    <h1 class="main-header-title">SOUTHTECH</h1>
+                    <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+                    <nav class="main-nav" id="main-nav">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="" class="menu-link">Inicio</a></li>
+                            <li class="menu-item"><a href="" class="menu-link">Productos</a></li>
+                            <li class="menu-item"><a href="" class="menu-link">Quienes Somos</a></li>
+                            <li class="menu-item"><a href="" class="menu-link">Soporte</a></li>
+                            <li class="menu-item"><a href="" class="menu-link">Contacto</a></li>
+                        </ul> 
+                    </nav>
+            </div>
+            <div class="main-header-container">
+                <span class="main-header-contact">Contacto</span>
+                <p class="main-header-contact"> <i class="fa-solid fa-phone"></i> +54 9 11 67047349</p>
+            </div>
+            <div class="main-header-container">
+                <a href="" class="main-header-links fa-regular fa-user"></a>
+                <a href="" class="main-header-btn">Mi Carrito <i class="fa-solid fa-cart-shopping"></i></a>
+                <input type="search" class="main-header-imput" placeholder="Buscar Producto"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2021/03/setup-gaming-2267149.jpg?h=8abcec71&itok=ZwtXAhl7" alt="" class="slider-img">
+                <div class="slider-content">
+                    <h2 class="slider-title">Compre Ahora</h2>
+                    <p class="slider-txt">con descuento en efectivo</p>
+                    <a href="" class="slider-btn-title">clica aqui</a>
+                </div>
+            </div>
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2021/04/alfombrilla-blade-hawks-2288979.jpg?itok=L_F6mOY1" alt="" class="slider-img">
+                <div class="slider-content">
+                    <h2 class="slider-title">Compre Ahora</h2>
+                    <p class="slider-txt">con 10% descuento</p>
+                    <a href="" class="slider-btn-title">clica aqui</a>
+                </div>
+            </div>
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/855/public/media/image/2020/04/cascos-gaming-beexcellent-1924445.jpg?itok=QlSIuqKZ" alt="" class="slider-img">
+                <div class="slider-content">
+                    <h2 class="slider-title">Compre Ahora</h2>
+                    <p class="slider-txt">con 20% descuento</p>
+                    <a href="" class="slider-btn-title">clica aqui</a>
+                </div>
+            </div>
+            <div class="slider-section"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2021/09/nintendo-switch-oled-2487357.jpg?itok=76eqoJUR" alt="" class="slider-img">
+                <div class="slider-content">
+                    <h2 class="slider-title">Compre Ahora</h2>
+                    <p class="slider-txt">con 30% descuento</p>
+                    <a href="" class="slider-btn-title">clica aqui</a>
+                </div>
+            </div>
+        </div> 
+        <div class="slider-btn slider-btn-right" id="btn-rigth">&#62;</div>
+        <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
+    </div>
+    <main class="main">
+        <h2 class="main-title">Productos</h2>
+        <div class="container-products">
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_801126-MLA40433953617_012020-O.webp" alt="" class="product-img">
+                    <div class="product-descript">
+                        <h3 class="product-title">Auriculares gamer Logitech G Series G332 </h3>
+                        <spam class="product-price">$ 13.556</spam>
+                    </div>
+                <button class="fa-solid fa-cart-plus product-icon" id="product-A" value="0"></button>
+            </div>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_751353-MLA45434957044_042021-O.webp" alt="" class="product-img">
+                <div class="product-descript">
+                    <h3 class="product-title">Cpu Gamer I7 + 16gb + 1tb + Gt 1030 2gb</h3>
+                    <spam class="product-price">$ 177.432</spam>
+                </div>
+                <button class="fa-solid fa-cart-plus product-icon" id="product-B" value="1"></buetton>
+            </div>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_965599-MLA50511943431_062022-O.webp" alt="" class="product-img">
+                <div class="product-descript">
+                    <h3 class="product-title">Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6"</h3>
+                    <spam class="product-price">$ 143.999</spam>
+                </div>
+                <button class="fa-solid fa-cart-plus product-icon" id="product-C" value="2"></buetton>
+            </div>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_623154-MLA43248306842_082020-O.webp" alt="" class="product-img">
+                <div class="product-descript">
+                    <h3 class="product-title">Access point, Router, Sistema Wi-Fi mesh TP-Link Deco E4</h3>
+                    <spam class="product-price">$ 26.699</spam>
+                </div>
+            <button class="fa-solid fa-cart-plus product-icon" value="3"></button>
+            </div>
+        </div>
+        <br>
 
-    <input type="text" placeholder="Producto" id="productoNuevo">
-    <input type="number" placeholder="Precio Unitario" id="precioUnitario">
-    <input type="number" placeholder="Cantidad a llevar" id="cantidadUnitaria">
-    <br>
-    <br>
-    <button id="agregarProducto">Agregar Producto al Carrito</button>
-    <button id="eliminarUltimo">Eliminar Ultimo</button>
-    <button id="calcularTotal">Calcular Compra</button>
-    <button id="vaciarCarrito">Vaciar Carrito</button>
-</div>
+        <div class="carrito-container">
+            <div class="imput-carrito">
+                <input type="text" placeholder="Producto"  id="productoNuevo">
+                <input type="number" placeholder="Precio" name="points" min="1" max="9999999" step="1" id="precioUnitario">
+                <input type="number" placeholder="Cantidad" name="points" min="1" max="999999" step="1" id="cantidadUnitaria">
+            </div>
 
-<div>
-    <h2>Carrito</h2>
+            <div class="btns-carrito">           
+                <button class="btn-carrito" id="agregarProducto">Agregar Producto al Carrito</button>
+                <button class="btn-carrito"id="eliminarUltimo">Eliminar Ultimo</button>
+                <button class="btn-carrito"id="calcularTotal">COMPRAR</button>
+                <button class="btn-carrito"id="vaciarCarrito">Vaciar Carrito</button>
+            </div>
 
-    <ul class="carrito">
+        </div>
+        <br>
+        <div class="product">
+            <h2>Carrito</h2>
+            <ul class="carrito">
 
-    </ul>
-</div>
-<div class="total">
-</div>
-<br>
+            </ul>
+        </div>
+        <br>
+        <div class="total product">
+        </div>
+        <br>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer-copy">
+            <P>Todos Los Derechos Reservados © 2022 Daniel Jerez</P>
+        </div>
+
+    </footer>
 
 
     <script src="./src/script.js"></script>

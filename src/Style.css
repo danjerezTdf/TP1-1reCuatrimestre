@@ -1,19 +1,374 @@
+
+/* importo fuente */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+* {
+    box-sizing: border-box;
+    font-family: Inconsolata;
+    
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+/* css header */
+.main-header-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+/*stilos de menu */
+
+.main-nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 999999;
+}
+.menu{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    background: #464646;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.menu-item {
+    text-align: center;
+    margin: auto;
+}
+.menu-link {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.menu-link:hover {
+    background: white;
+    color: #212121;
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid #454546; 
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.main-header .container {
+    padding: 10px 30px;
+}
+.main-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header-link {
+    color: #333;
+}
+.main {
+    padding: 20px;
+}
+
+.main-header-btn {
+    display: block;
+    padding: 10px 20px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+ 
+}
+
+.main-header-imput {
+    display: block;
+    padding: 10px 20px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+
+}
+/* fin header */
+
+/* slider */
+.container-slider {
+    margin: 50px 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.slider {
+    display:flex;
+    width: 400%;
+    height: 300px;
+    margin-left: -100%;
+    position: relative;
+}
+.slider:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+.slider-section {
+    width: 100%;
+    position: relative
+}
+.slider-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-btn {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+.slider-btn-left {
+    left: 10px;
+}
+.slider-btn-right {
+    right: 10px;
+}
+.slider-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 30%;
+    left: 40%;
+    color: white;
+    transform: translate (-50%, -50%);
+    /* width: 25%; */
+}
+
+.slider-btn-title {
+    display: block;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+}
+
+
+.slider-title{
+    font-size: 2.2em;
+    margin: 0;
+
+}
+.slider-txt {
+    margin: 5px 0;
+
+}
+/* fin slider */
+/* Productos */
+.product {
+    border : 1px solid #464646;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    place-content: center;
+}
+.product > div :before {
+    content: "OFERTA";
+    background: #ff4e00;
+    padding: 10px;
+    width: 80px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    transform: rotate(-90deg);
+    color: white;
+    font-weight: bold;
+}
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    
+}
+.product-title {
+    text-align: center;
+}
+.product-price {
+    font-weight: bold;
+}
+
+.product-icon {
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    /* cursor: pointer; */
+}
+.product-img {
+    width: 100%;
+    width: 150px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* agregar prod */
+
+.carrito-container {
+    border : 1px solid #464646;
+    padding: 20px;
+    text-align: center;
+    place-content: center;
+}
+.imput-carrito{
+    display: block;
+    padding: 10px;
+}
+
+.btn-carrito{
+    background-color: #ff4e00;
+    border: none;
+    padding: 10px;
+    margin: 2px;
+    color: white; 
+    font-weight: bold;
+}
+/* fin agregar prod */
+
+.main-footer{
+    display: block;
+    padding: 20px;
+    background:#464646;
+    /* height: 20px; */
+
+}
+.main-footer-copy {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* fin footer*/
 ul {
-    margin:0;
-    padding:0;
-    /* text-align: center; */
+    margin:0; 
+    padding: 10px;  
     list-style:none;                
 }
 ul  li {
-    padding: 2px 5px;               
+    padding: 2px 5px;  
+    font-weight: bold;             
 }
 
-ul li:before {
-    content:url(#);;
+
+/* stilos para tablet */
+
+@media screen and (min-width: 768px){
+    .slider{
+        height: 400px;
+    }
 }
 
-.colorVerde {
-    text-align: center;
-    color: green;
-    font-size: 24px;
+/* stilos para web */
+
+@media screen and (min-width:1024px){
+    .main {
+        width: 1024px;
+        margin: auto;
+    }
+ 
+
+    .container-products {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 10px;
+    }  
+    .slider{
+        height: 400px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .main-header .container-flex {
+        display: flex;
+    }
+    .main-header-container {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .main-header-container:nth-child(2){
+        order: -1;
+        width: 25%;
+        margin-top: 50px;
+    }
+    .main-header-container:nth-child(3){
+        width: 25%;
+        padding: 0 20px;
+    }
+    .main-header-title {
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .main-header-links {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .main-header-btn {
+     width: 130px;
+     padding: 10px;
+     margin-bottom: 20px;
+
+    }
+    .main-header-imput {
+        width: 80%;
+
+    }
+    .main-nav {
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+    }
+    .menu {
+        position: static;
+        width: 100%;
+        display: flex;
+        background:none;
+
+    }
+    .menu-link {
+        color: #333;
+    }
+    .menu-link:hover {
+        background: #333;
+        color: white;
+        
+    }
+
+
+
 }
