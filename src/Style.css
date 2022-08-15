@@ -295,8 +295,8 @@ ul  li {
 /* stilos para web */
 
 @media screen and (min-width:1024px){
-    .main {
-        width: 1024px;
+    body {
+       padding: 0 300px;;
         margin: auto;
     }
  
