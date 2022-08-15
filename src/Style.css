@@ -67,11 +67,7 @@ img {
     cursor: pointer;
     margin-left: auto;
 }
-/* 
-.main-nav {
-    display: none; 
 
-} */
 .main-header .container {
     padding: 10px 30px;
 }
@@ -80,28 +76,25 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+.main-header-link {
+    color: #333;
+}
 .main {
     padding: 20px;
-}
-.icon-menu {
-    font-size: 1.5em;
-    border: 1px solid #454546;
-    display: block;
-    padding: 10px 20px;
 }
 
 .main-header-btn {
     display: block;
-    padding: 10px 25px;
+    padding: 10px 20px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
-
+ 
 }
 
 .main-header-imput {
     display: block;
-    padding: 10px 25px;
+    padding: 10px 20px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
@@ -184,6 +177,8 @@ img {
     text-decoration: none;
     width: 250px;
 }
+
+
 .slider-title{
     font-size: 2.2em;
     margin: 0;
@@ -300,15 +295,78 @@ ul  li {
 /* stilos para web */
 
 @media screen and (min-width:1024px){
-
+    body {
+        padding: 0 100px;
+    }
 
     .container-products {
         display: grid;
         grid-template-columns: repeat(4, 2fr);
         grid-gap: 10px;
-}
+    }  
     .slider{
         height: 400px;
     }
+    .icon-menu{
+        display: none;
+    }
+    .main-header .container-flex {
+        display: flex;
+    }
+    .main-header-container {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .main-header-container:nth-child(2){
+        order: -1;
+        width: 25%;
+        margin-top: 50px;
+    }
+    .main-header-container:nth-child(3){
+        width: 25%;
+        padding: 0 20px;
+    }
+    .main-header-title {
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .main-header-links {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .main-header-btn {
+     width: 130px;
+     padding: 10px;
+     margin-bottom: 20px;
+
+    }
+    .main-header-imput {
+        width: 80%;
+
+    }
+    .main-nav {
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+    }
+    .menu {
+        position: static;
+        width: 100%;
+        display: flex;
+        background:none;
+
+    }
+    .menu-link {
+        color: #333;
+    }
+    .menu-link:hover {
+        background: #333;
+        color: white;
+        
+    }
+
+
 
 }
