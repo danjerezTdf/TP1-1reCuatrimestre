@@ -1,5 +1,10 @@
+
+/* importo fuente */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
 * {
     box-sizing: border-box;
+    font-family: Inconsolata;
 }
 body {
     margin: 0;
@@ -26,7 +31,9 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-
+.main {
+    padding: 20px;
+}
 .icon-menu {
     font-size: 1.5em;
     border: 1px solid #454546;
@@ -50,9 +57,9 @@ img {
     border: 1px solid #454546;
     text-decoration: none;
 }
-/* fin css header */
+/* fin header */
 
-/* css slider */
+/* slider */
 .container-slider {
     margin: 50px 0 auto;
     position: relative;
@@ -64,9 +71,21 @@ img {
     width: 400%;
     height: 300px;
     margin-left: -100%;
+    position: relative;
+}
+.slider:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
 }
 .slider-section {
     width: 100%;
+    position: relative
 }
 .slider-img {
     display: block;
@@ -76,6 +95,7 @@ img {
 }
 .slider-btn {
     position: absolute;
+    z-index: 2;
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.3);
@@ -94,7 +114,50 @@ img {
 .slider-btn-right {
     right: 10px;
 }
-/* fin css slider */
+.slider-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 30%;
+    left: 45%;
+    color: white;
+    transform: translate (-50%, -50%);
+    /* width: 50%; */
+}
+
+.slider-btn-title {
+    display: block;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+}
+.slider-title{
+    font-size: 2.2em;
+    margin: 0;
+
+}
+.slider-txt {
+    margin: 5px 0;
+
+}
+/* fin slider */
+/* Productos */
+.product {
+    border : 1px solid #464646;
+    padding: 20px;
+}
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+
+
 
 ul {
     margin:0; 
