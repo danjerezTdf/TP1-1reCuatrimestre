@@ -166,7 +166,6 @@ let btnIconAddProd = document.querySelectorAll(".product-icon");
 btnIconAddProd.forEach(boton => {
     boton.addEventListener("click", agregarProductoPrev);
 });
-
 let btnCalcular = document.getElementById("calcularTotal");
 btnCalcular.addEventListener("click", calcularTotal);
 
