@@ -2,8 +2,8 @@
 let productos = [];
 let preciosUnitarios= [];
 let cantidadDeProductos = [];
-let productosPre = ["Auriculares gamer Logitech G Series G332","Cpu Gamer I7 + 16gb + 1tb + Gt 1030 2gb","Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6","Access point, Router, Sistema Wi-Fi mesh TP-Link Deco E4"];
-let preciosUnitariosPre = ["13556","177432","14399","26699"];
+let productosPre = ["Auriculares gamer Logitech G Series G332","Cpu Gamer I7 + 16gb + 1tb + Gt 1030 2gb","Notebook Lenovo IdeaPad 15ITL05 platinum grey 15.6","Access point, Router, Sistema Wi-Fi mesh TP-Link Deco E4","Teclado + Mouse + Auricular + Pad gamer Noganet nkb-403","Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black","Silla Gamer Cooler Master Caliber R2C Grey","Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth Cooler"];
+let preciosUnitariosPre = ["13556","177432","14399","26699","7999","15950","107400","36000"];
 let cantidadDeProductosPre = 1;
 let total = 0;
 let cantidadDeProducto = 0;
