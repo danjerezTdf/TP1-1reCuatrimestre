@@ -76,8 +76,8 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-.main-header-link {
-    color: #333;
+.main-header-links {
+    color: #464646;
 }
 .main {
     padding: 20px;
@@ -296,7 +296,7 @@ ul  li {
 
 @media screen and (min-width:1024px){
     body {
-        padding: 0 300px;;
+        padding: 0 100px;;
         margin: auto;
     }
 
@@ -321,7 +321,10 @@ ul  li {
     .main-header-container:nth-child(2){
         order: -1;
         width: 25%;
-        margin-top: 50px;
+        margin-top: 20px;
+        padding: 40px;
+
+
     }
     .main-header-container:nth-child(3){
         width: 25%;
