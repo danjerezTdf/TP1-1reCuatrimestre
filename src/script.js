@@ -123,14 +123,15 @@ function eliminarTodo (){
     cantidadDeProductos = [];
 
     miLista.innerHTML = "";
-    divTotal.removeChild(divTotal.lastChild)
-    
+    // divTotal.removeChild(divTotal.lastChild)
+    divTotal.innerHTML = "<h2>Carrito Vacio</h2>"
 }
 
 function calcularTotal (){
     divTotal.innerHTML = " "
     let total = canlcular();
     
+    divCarrito.innerHTML = "<h2>Gracias por su Compra</h2>";
     let miTotal = document.createElement("h2");
     miTotal.innerHTML = "Total de su Compra $" + total;
     divTotal.appendChild(miTotal)
@@ -158,6 +159,9 @@ setInterval ( function () {
 let miLista = document.querySelector(".carrito");
 
 let divTotal = document.querySelector(".total");
+
+let divCarrito = document.querySelector(".carrito-container");
+
 
 let btnAgregar = document.getElementById("agregarProducto");
 btnAgregar.addEventListener("click",agregarProductoAlCarrito);

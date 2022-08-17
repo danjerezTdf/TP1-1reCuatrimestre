@@ -85,6 +85,7 @@ img {
 
 .main-header-btn {
     display: block;
+    font-size: 0.8em;
     padding: 10px 20px;
     color: #454546;
     border: 1px solid #454546;
@@ -94,7 +95,8 @@ img {
 
 .main-header-imput {
     display: block;
-    padding: 10px 20px;
+    font-size: 0.8em;
+    padding: 10px 10px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
@@ -112,7 +114,7 @@ img {
 .slider {
     display:flex;
     width: 400%;
-    height: 300px;
+    height: 200px;
     margin-left: -100%;
     position: relative;
 }
@@ -158,24 +160,24 @@ img {
     right: 10px;
 }
 .slider-content {
+    display :block;
     position: absolute;
     z-index: 2;
     text-align: center;
-    top: 30%;
-    left: 40%;
+    top: 38%;
+    left: 50%;
     color: white;
-    transform: translate (-50%, -50%);
-    /* width: 25%; */
+    transform : translate (-50%, -50%);
 }
 
 .slider-btn-title {
     display: block;
     border: 1px solid white;
     color: white;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
     text-decoration: none;
-    width: 250px;
+    width: 100%;
 }
 
 
@@ -211,7 +213,7 @@ img {
 }
 .container-products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     
 }
@@ -228,6 +230,10 @@ img {
     background-color: transparent;
     border: none;
     /* cursor: pointer; */
+}
+
+.product-icon:hover {
+    font-size: 1.5em;
 }
 .product-img {
     width: 100%;
@@ -290,7 +296,13 @@ ul  li {
     .slider{
         height: 400px;
     }
+
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
 }
+    /* .main-header-btn {
+        icon: icfa-solid fa-cart-shopping;
+    } */
 
 /* stilos para web */
 
