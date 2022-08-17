@@ -86,6 +86,7 @@ img {
 .main-header-btn {
     display: block;
     font-size: 0.8em;
+    text-align: center;
     padding: 10px 20px;
     color: #454546;
     border: 1px solid #454546;
@@ -160,7 +161,7 @@ img {
     right: 10px;
 }
 .slider-content {
-    display :block;
+    display :none;
     position: absolute;
     z-index: 2;
     text-align: center;
@@ -198,8 +199,9 @@ img {
     text-align: center;
     position: relative;
     place-content: center;
+    box-shadow: 0.3px 2px 2px;
 }
-.product > div :before {
+.offer:before {
     content: "OFERTA";
     background: #ff4e00;
     padding: 10px;
@@ -222,6 +224,8 @@ img {
 }
 .product-price {
     font-weight: bold;
+    font-size: 1.5em;
+    border: 1px;
 }
 
 .product-icon {
@@ -303,7 +307,7 @@ ul  li {
     /* .main-header-btn {
         icon: icfa-solid fa-cart-shopping;
     } */
-
+}
 /* stilos para web */
 
 @media screen and (min-width:1024px){
@@ -354,7 +358,7 @@ ul  li {
     }
     .main-header-btn {
      width: 130px;
-     padding: 10px;
+     padding: 10px 10px;
      margin-bottom: 20px;
 
     }
