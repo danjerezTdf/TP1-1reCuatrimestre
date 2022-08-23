@@ -140,6 +140,8 @@ function calcularTotal (){
 
 let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');
+
+
 btnMenu.addEventListener('click', function(){
 mainNav.classList.toggle('mostrar');
 });
@@ -154,13 +156,17 @@ btnLeft.addEventListener("click", prev);
 setInterval ( function () {
     next();
 }, 5000);
+
 // end slider
+let search = document.querySelector(".main-header-imput")
 
 let miLista = document.querySelector(".carrito");
 
 let divTotal = document.querySelector(".total");
 
 let divCarrito = document.querySelector(".carrito-container");
+
+
 
 
 let btnAgregar = document.getElementById("agregarProducto");

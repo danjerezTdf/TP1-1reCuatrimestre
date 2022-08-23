@@ -71,10 +71,12 @@ img {
 .main-header .container {
     padding: 10px 30px;
 }
+
 .main-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .main-header-links {
     color: #464646;
@@ -87,22 +89,23 @@ img {
     display: block;
     font-size: 0.8em;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
- 
 }
 
 .main-header-imput {
     display: block;
     font-size: 0.8em;
-    padding: 10px 10px;
+    padding: 10px 5px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
 
 }
+
+
 /* fin header */
 
 /* slider */
@@ -259,6 +262,9 @@ img {
     padding: 10px;
 }
 
+.imput-carrito-box {
+    margin: 5px;
+}
 .btn-carrito{
     background-color: #ff4e00;
     border: none;
@@ -339,9 +345,8 @@ ul  li {
         width: 25%;
         margin-top: 20px;
         padding: 40px;
-
-
     }
+
     .main-header-container:nth-child(3){
         width: 25%;
         padding: 0 20px;
